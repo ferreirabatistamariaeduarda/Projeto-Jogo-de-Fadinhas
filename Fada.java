@@ -63,4 +63,4 @@ class Fada {
         }
         System.out.println(nome + " recebeu " + dano + " de dano. Vida restante: " + vida);
     }
-}
+} 
