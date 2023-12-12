@@ -1,8 +1,5 @@
-public class Stella extends Fada {
-
-    public Stella(String nome, int vida) {
-        super(nome, vida);
-        //TODO Auto-generated constructor stub
+class Stella extends Fada {
+    public Stella() {
+        super("Stella", 100, new Poder("Pérolas Solares", 30, 80), new Poder("Poder Estelar", 40, 85));
     }
-    
 }

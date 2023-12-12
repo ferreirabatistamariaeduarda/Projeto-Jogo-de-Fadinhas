@@ -1,32 +1,30 @@
-// Classe base para personagem
-class Fada{
+class Fada {
     private String nome;
     private int vida;
     private Poder poder;
+    private Poder poderEspecial;
+    private boolean poderEspecialDisponivel;
 
-    // Construtor para inicializar os atributos do personagem
-    public Fada(String nome, int vida, Poder poder) {
+    public Fada(String nome, int vida, Poder poder, Poder poderEspecial) {
         this.nome = nome;
         this.vida = vida;
         this.poder = poder;
+        this.poderEspecial = poderEspecial;
+        this.poderEspecialDisponivel = true; // O poder especial está disponível no início
     }
 
-    // Método para obter o nome do personagem
     public String getNome() {
         return nome;
     }
 
-    // Método para obter a vida atual do personagem
     public int getVida() {
         return vida;
     }
 
-    // Método para ajustar a vida do personagem
     public void setVida(int vida) {
         this.vida = vida;
     }
 
-    // Método para obter o poder do personagem
     public Poder getPoder() {
         return poder;
     }
@@ -45,5 +43,8 @@ class Fada{
             vida = 0;
         }
         System.out.println(nome + " recebeu " + dano + " de dano. Vida restante: " + vida);
+    }
+
+    public void usarPoderEspecial() {
     }
 }
