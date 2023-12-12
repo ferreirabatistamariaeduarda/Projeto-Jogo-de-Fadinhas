@@ -22,4 +22,4 @@ public class Fada {
     public void usarPoder(Fada alvo) {
         
     }
-}
+} bhjjgh
