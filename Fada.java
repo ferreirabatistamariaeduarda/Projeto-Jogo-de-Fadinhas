@@ -20,6 +20,6 @@ public class Fada {
     }
 
     public void usarPoder(Fada alvo) {
-        
+        //poderes
     }
 } bhjjgh
