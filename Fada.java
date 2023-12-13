@@ -29,22 +29,38 @@ class Fada {
         return poder;
     }
 
-    // Método para realizar um ataque ao alvo usando o poder
+    public Poder getPoderEspecial() {
+        return poderEspecial;
+    }
+
+    public boolean isPoderEspecialDisponivel() {
+        return poderEspecialDisponivel;
+    }
+
+    public void usarPoderEspecial() {
+        if (poderEspecialDisponivel) {
+            System.out.println(nome + " está usando o poder especial: " + poderEspecial);
+            // Lógica específica para o poder especial (pode ser adicionada conforme necessário)
+            poderEspecialDisponivel = false; // O poder especial foi usado e precisa recarregar
+        } else {
+            System.out.println("Poder especial de " + nome + " está recarregando. Aguarde o próximo turno.");
+        }
+    }
+
     public void atacar(Fada alvo) {
+        // Utiliza o poder normal para atacar
         int dano = poder.calcularDano();
         alvo.receberDano(dano);
         System.out.println(nome + " atacou " + alvo.getNome() + " causando " + dano + " de dano.");
+        // Após atacar, o poder especial fica disponível novamente
+        poderEspecialDisponivel = true;
     }
 
-    // Método para processar o dano recebido e ajustar a vida
     private void receberDano(int dano) {
         vida -= dano;
         if (vida < 0) {
             vida = 0;
         }
         System.out.println(nome + " recebeu " + dano + " de dano. Vida restante: " + vida);
-    }
-
-    public void usarPoderEspecial() {
     }
 }
