@@ -6,7 +6,7 @@ public class JogoWinx {
 
         // Seleção de Fadas
         Fada jogador1 = new Stella();
-        Fada jogador2 = new Aisha();
+        Fada jogador2 = new IcyBruxa();
 
         // Batalha
         System.out.println("Batalha iniciada entre " + jogador1.getNome() + " e " + jogador2.getNome());
@@ -36,14 +36,14 @@ public class JogoWinx {
         }
 
         // Resultados da Batalha
-        System.out.println("Resultado da Batalha:");
+        System.out.println("**** Resultado da Batalha: ****");
         System.out.println("Vencedor: " + ((jogador1.getVida() > jogador2.getVida()) ? jogador1.getNome() : jogador2.getNome()));
         System.out.println("Vida restante do " + jogador1.getNome() + ": " + jogador1.getVida());
         System.out.println("Vida restante do " + jogador2.getNome() + ": " + jogador2.getVida());
     }
 
     private static void mostrarOpcoes(Fada jogador) {
-        System.out.println("Escolha a ação:");
+        System.out.println("*** Escolha a ação: ***");
         System.out.println("1. Atacar com " + jogador.getPoder());
         System.out.println("2. Usar Poder Especial: " + jogador.getPoderEspecial());
     }
