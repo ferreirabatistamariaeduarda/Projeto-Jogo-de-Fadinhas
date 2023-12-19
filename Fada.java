@@ -42,6 +42,7 @@ class Fada {
             System.out.println(nome + " está usando o poder especial: " + poderEspecial);
             // Lógica específica para o poder especial (pode ser adicionada conforme necessário)
             poderEspecialDisponivel = false; // O poder especial foi usado e precisa recarregar
+            System.out.println("Vida restante de " + nome + ": " + getVida());
         } else {
             System.out.println("Poder especial de " + nome + " está recarregando. Aguarde o próximo turno.");
         }
@@ -54,6 +55,7 @@ class Fada {
         System.out.println(nome + " atacou " + alvo.getNome() + " causando " + dano + " de dano.");
         // Após atacar, o poder especial fica disponível novamente
         poderEspecialDisponivel = true;
+        
     }
 
     private void receberDano(int dano) {
