@@ -1,11 +1,11 @@
-class Fada {
+class Personagem {
     private String nome;
     private int vida;
     private Poder poder;
     private Poder poderEspecial;
     private boolean poderEspecialDisponivel;
 
-    public Fada(String nome, int vida, Poder poder, Poder poderEspecial) {
+    public Personagem(String nome, int vida, Poder poder, Poder poderEspecial) {
         this.nome = nome;
         this.vida = vida;
         this.poder = poder;
@@ -48,7 +48,7 @@ class Fada {
         }
     }
 
-    public void atacar(Fada alvo) {
+    public void atacar(Personagem alvo) {
         // Utiliza o poder normal para atacar
         int dano = poder.calcularDano();
         alvo.receberDano(dano);

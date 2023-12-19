@@ -5,8 +5,8 @@ public class JogoWinx {
         Scanner scanner = new Scanner(System.in);
 
         // Seleção de Fadas
-        Fada jogador1 = new Stella();
-        Fada jogador2 = new IcyBruxa();
+        Personagem jogador1 = new Stella();
+        Personagem jogador2 = new IcyBruxa();
 
         // Batalha
         System.out.println("Batalha iniciada entre " + jogador1.getNome() + " e " + jogador2.getNome());
@@ -42,7 +42,7 @@ public class JogoWinx {
         System.out.println("Vida restante do " + jogador2.getNome() + ": " + jogador2.getVida());
     }
 
-    private static void mostrarOpcoes(Fada jogador) {
+    private static void mostrarOpcoes(Personagem jogador) {
         System.out.println("*** Escolha a ação: ***");
         System.out.println("1. Atacar com " + jogador.getPoder());
         System.out.println("2. Usar Poder Especial: " + jogador.getPoderEspecial());
@@ -53,7 +53,7 @@ public class JogoWinx {
         return scanner.nextInt();
     }
 
-    private static void processarAcao(Fada atacante, Fada alvo, int escolha) {
+    private static void processarAcao(Personagem atacante, Personagem alvo, int escolha) {
         if (escolha == 1) {
             atacante.atacar(alvo);
         } else if (escolha == 2) {
