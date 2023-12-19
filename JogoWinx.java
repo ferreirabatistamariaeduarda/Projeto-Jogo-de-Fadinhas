@@ -56,7 +56,7 @@ public class JogoWinx {
         if (escolha == 1) {
             atacante.atacar(alvo);
         } else if (escolha == 2) {
-            atacante.usarPoderEspecial();
+            atacante.usarPoderEspecial(alvo);
         } else {
             System.out.println("Ação inválida. Perdeu o turno.");
         }

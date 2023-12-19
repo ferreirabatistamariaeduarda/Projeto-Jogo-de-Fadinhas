@@ -37,10 +37,12 @@ class Personagem {
         return poderEspecialDisponivel;
     }
 
-    public void usarPoderEspecial() {
+    public void usarPoderEspecial(Personagem alvo) {
         if (poderEspecialDisponivel) {
             System.out.println(nome + " está usando o poder especial: " + poderEspecial);
-            /
+            int dano = poder.calcularDano();
+            alvo.receberDano(dano);
+            System.out.println(nome + " atacou " + alvo.getNome() + " causando " + dano + " de dano.");
             poderEspecialDisponivel = false; 
         } else {
             System.out.println("Poder especial de " + nome + " está recarregando. Aguarde o próximo turno.");
