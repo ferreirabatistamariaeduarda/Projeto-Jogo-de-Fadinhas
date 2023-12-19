@@ -10,7 +10,7 @@ class Personagem {
         this.vida = vida;
         this.poder = poder;
         this.poderEspecial = poderEspecial;
-        this.poderEspecialDisponivel = true; // O poder especial está disponível no início
+        this.poderEspecialDisponivel = true; 
     }
 
     public String getNome() {
@@ -40,20 +40,17 @@ class Personagem {
     public void usarPoderEspecial() {
         if (poderEspecialDisponivel) {
             System.out.println(nome + " está usando o poder especial: " + poderEspecial);
-            // Lógica específica para o poder especial (pode ser adicionada conforme necessário)
-            poderEspecialDisponivel = false; // O poder especial foi usado e precisa recarregar
-            System.out.println("Vida restante de " + nome + ": " + getVida());
+            /
+            poderEspecialDisponivel = false; 
         } else {
             System.out.println("Poder especial de " + nome + " está recarregando. Aguarde o próximo turno.");
         }
     }
 
     public void atacar(Personagem alvo) {
-        // Utiliza o poder normal para atacar
         int dano = poder.calcularDano();
         alvo.receberDano(dano);
         System.out.println(nome + " atacou " + alvo.getNome() + " causando " + dano + " de dano.");
-        // Após atacar, o poder especial fica disponível novamente
         poderEspecialDisponivel = true;
         
     }

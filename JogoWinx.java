@@ -4,7 +4,6 @@ public class JogoWinx {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Seleção de Fadas
         Personagem jogador1 = new Stella();
         Personagem jogador2 = new IcyBruxa();
 
