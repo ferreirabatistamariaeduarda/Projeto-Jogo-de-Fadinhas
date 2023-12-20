@@ -7,11 +7,22 @@
 
 <p>"Batalha Mágica" é um jogo de estratégia onde os jogadores assumem o papel de Fada Stella ou Bruxa Icy, cada uma com habilidades mágicas únicas.</p>
 
+
 <h4>Fada Stella: Fada Da Luz Solar 🌞
  <p>🪄 Poderes: Pérolas Solares e Poder Estelar 🪄</p>
 </h4>
 
-<h4>Bruxa Icy: Bruxa com Poderes do Gelo e do Frio 🌞
- <p>🪄 Poderes: Pérolas Solares e Poder Estelar 🪄</p>
+<h4>Bruxa Icy: Bruxa com Poderes do Gelo e do Frio ❄️
+ <p>🪄 Poderes: Flechas de Gelo e Gelo Prisma 🪄</p>
 </h4>
+
+<h3>Conceitos de POO usados🧑‍💻</h3>
+
+- `Construtores`
+- `Encapsulamento`
+- `Polimorfismo`
+- `Encapsulamento`
+- `@Override`
+- `Herança`
+
 
