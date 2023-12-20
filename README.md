@@ -21,7 +21,6 @@
 - `Construtores`
 - `Encapsulamento`
 - `Polimorfismo`
-- `Encapsulamento`
 - `@Override`
 - `Herança`
 
