@@ -75,13 +75,25 @@
 3. Escolha entre Fada Stella e Bruxa Icy.
 5. Boa Sorte na Batalha!
 
-<div align="center"><h3>🔧 Desenvolvido por: 👩‍💻</h3>
+   
+<div align="center"><h3>👩‍💻Desenvolvido por: </h3>
 <h4>
- Eduarda Ferreira 🌺
+ 🌺Eduarda Ferreira🌺
  <br> & <br>
- Vicencya Nayara 🌻
+ 🌻Vicencya Nayara🌻
 </h4>
 </div>
+
+
+<div align="center">
+ <h5>Disciplina: Programação Orientada à Objetos
+ <br>
+  Professor(a): Jamires Costa
+ </h5>
+ <img src="https://github.com/ferreirabatistamariaeduarda/Projeto-Jogo-de-Fadinhas/assets/127043761/9ba5fb70-a6eb-4585-a146-ede70ba3c5a1" width="200px">
+</div>
+
+
 
 
 
