@@ -27,7 +27,7 @@
 
 <h2 align="start">Como Jogar 🎮</h2>
 
-1. Clone o repositório: `Herança`
+1. Clone o repositório: `https://github.com/ferreirabatistamariaeduarda/Projeto-Jogo-de-Fadinhas.git`
 2. Execute o jogo usando o comando `java JogoWinx`.
 3. Escolha entre Fada Stella e Bruxa Icy.
 5. Boa Sorte na Batalha!
