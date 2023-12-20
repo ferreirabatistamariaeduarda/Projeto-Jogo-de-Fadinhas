@@ -58,7 +58,7 @@
   </div>
   
 
-  <4> 💠Herança<4>
+  <h4> 💠Herança<h4>
  
 - `Herança permite que uma classe herde atributos e métodos de outra classe.`
   <p>Exemplo: </p>
